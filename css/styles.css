@@ -1,0 +1,75 @@
+@font-face {
+  font-family: indonesia;
+  src: url(Indonesia.ttf); }
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgba(217, 138, 229, 0.1), rgba(217, 138, 229, 0.3), rgba(217, 138, 229, 0.1)); }
+
+#wrapper {
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  font-family: indonesia; }
+
+#mainContent {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  text-align: center; }
+
+.tester {
+  background-color: #383838;
+  width: 19%;
+  height: 60%;
+  border-radius: 10%;
+  margin-right: 5px;
+  display: inline-block; }
+
+#coverBox {
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: solid green 3px;
+  display: none; }
+
+#articleContent {
+  background: rgba(0, 0, 0, 0.9);
+  border: solid blue 3px;
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  overflow: scroll;
+  font-family: sans-serif;
+  display: none; }
+
+#exitBtn {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(217, 138, 229, 0.3);
+  border: solid black 1px;
+  border-radius: 50%;
+  display: none; }
+
+.article {
+  display: none; }
+
+.article-one, .article-two, .article-three {
+  color: black;
+  border: solid yellow 3px;
+  line-height: 2em;
+  width: 77%;
+  margin: 0 auto;
+  background-color: white;
+  display: none; }
+
+.tester p {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */

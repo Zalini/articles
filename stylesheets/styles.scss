@@ -1,0 +1,90 @@
+@import 'colors';
+@import 'sizing';
+@import 'fonts';
+
+body {
+	margin: $none;
+	padding: $none;
+	font-family: sans-serif;
+	background: linear-gradient(to right, $bgLight, $bgDark, $bgLight);
+}
+
+#wrapper {
+	width: $def;
+	height: 150px;
+	text-align: left;
+	font-family: $def-font;
+}
+
+#mainContent {
+	width: $def;
+	height: 400px;
+	background-color: white;
+	// margin: 0 auto;
+	text-align: center;
+}
+
+.tester {
+	background-color: $highlights;
+	width: 19%;
+	height: 60%;
+	border-radius: 10%;
+	// float: left;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+
+#coverBox{
+	background: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: $none;
+	left: $none;
+	padding: $none;
+	margin: $none;
+	border: solid green 3px;
+	display: none;
+}
+
+#articleContent {
+	background: rgba(0, 0, 0, 0.9);
+	border: solid blue 3px;
+	width: 70%;
+	height: 80%;
+	margin: 0 auto;
+	overflow: scroll;
+	font-family: sans-serif;
+	display: none;
+}
+
+#exitBtn {
+	width: 30px;
+	height: 30px;
+	background-color: $bgDark;
+	border: solid $standard 1px;
+	border-radius: 50%;
+	display: none;
+}
+
+.article {
+	display: none;
+}
+
+.article-one, .article-two, .article-three {
+	color: black;
+	border: solid yellow 3px;
+	line-height: 2em;
+	width: 77%;
+	margin: 0 auto;
+	background-color: white;
+	display: none;
+}
+
+
+.tester p {
+	display: none;
+}
+
+
