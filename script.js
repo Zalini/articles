@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
 $(".articlesCarousel").slick({
-	dots: true,
 	infinite: true,
 	fade: true,
 	autoPlay: true,
 	autoplaySpeed: 1000,
 	arrows: true,
+	swipe: true,
+	mobileFirst: true,
+	accessibilty: true
 });
 
 
@@ -19,11 +21,13 @@ $(".articlesCarousel").slick({
 
 
 $('.multiple-items').slick({
-  dots: true,
   infinite: true,
   speed: 500,
   fade: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  swipe: true,
+  mobileFirst: true,
+  accessibilty: true
 });
 
 

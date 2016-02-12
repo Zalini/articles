@@ -20,19 +20,20 @@ a {
 	color: $aColor;
 }
 
+a:hover {
+	color: $standard;
+}
 
+
+//sliders
 .slick-slider{
 	margin: 0 auto;
 	text-align: center; 
 	line-height: 2.5em; 
 }
 
-
-// .slick-dots {
-// 	background-color: blue
-// }
-
-#slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04 {
+#slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, 
+#slick-slide04, #slick-slide10, #slick-slide11, #slick-slide12, #slick-slide13  {
 	display: none;
 }
 
@@ -40,9 +41,8 @@ a {
 	display: none;
 }
 
-
 .articlesCarousel {
-	padding-top: 10px;
+	padding: 20px;
 	color: $standard;
 	width: 95%;
 	border: 3px $standard solid;
@@ -51,28 +51,17 @@ a {
 
 .articlesCarousel img{
 	 width: 40%;
-	 height: 100%;
 	 border: solid $standard 3px;
 	 float: right;
 }
 
-
-
-
-.slick-next {
+.slick-next, .slick-prev{
 	background: black;
 	width: 60px;
 	height: 60px;
-	position: absolute;
-	z-index: 1000; 
+
 }
 
-.slick-prev {
-	background: black;
-	width: 60px;
-	height: 60px;
-	position: absolute;
-}
 
 // .slick-prev:before, .slick-next:before {
 // 	font-size: 50px; 
@@ -82,34 +71,41 @@ a {
 // 	// color: red;
 // }
 
+//second carousel
 .multiple-items {
-	width: 70%;
-	border: solid $bgDark 5px;
-	height: 40%;
+	@extend .articlesCarousel;
+	background: rgba(54, 54, 59, 0.6);
+	color: $standard;
+	width: 80%;
 }
 
-.multiple-items img, li {
-	width: 50%;
-	border: solid red 3px;	
+.multiple-items .slick-next, .multiple-items .slick-prev  {
+	background: $defBlue;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.multiple-items {
+	
+	img {
+	width: 32%;
+	border: solid $defBlue 7px;	
 	float: left;
+	margin-left: 50px;
+
+	} 
+
+	li {
+	width: 53%;
+	border: solid $defBlue 7px;	
 	background-color: white;
-	margin: 0 auto;
+	margin-right: 50px;
+	float: right;
+	}
 }
 
-.multiple-items a {
-	clear: both;
+.slick-prev:hover,
+.slick-next:hover, {
+    background: black;
 }
-
-#test {
-	width: 90%;
-	margin: 0 auto;
-}
-
-
-// .multiple-items li {
-// 	width: 40%;
-// 	border: solid $bgLight 3px;	
-// 	float: left;
-
-// }
-
