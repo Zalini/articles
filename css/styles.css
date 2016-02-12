@@ -1,75 +1,73 @@
 @font-face {
   font-family: indonesia;
   src: url(Indonesia.ttf); }
+* {
+  text-decoration: none;
+  list-style-type: none; }
+
 body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-  background: linear-gradient(to right, rgba(217, 138, 229, 0.1), rgba(217, 138, 229, 0.3), rgba(217, 138, 229, 0.1)); }
+  background-color: #fff; }
 
-#wrapper {
-  width: 100%;
-  height: 150px;
-  text-align: left;
-  font-family: indonesia; }
+a {
+  color: #FF703A; }
 
-#mainContent {
-  width: 100%;
-  height: 400px;
-  background-color: white;
-  text-align: center; }
-
-.tester {
-  background-color: #383838;
-  width: 19%;
-  height: 60%;
-  border-radius: 10%;
-  margin-right: 5px;
-  display: inline-block; }
-
-#coverBox {
-  background: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 0px;
-  margin: 0px;
-  border: solid green 3px;
-  display: none; }
-
-#articleContent {
-  background: rgba(0, 0, 0, 0.9);
-  border: solid blue 3px;
-  width: 70%;
-  height: 80%;
+.slick-slider {
   margin: 0 auto;
-  overflow: scroll;
-  font-family: sans-serif;
+  text-align: center;
+  line-height: 2.5em; }
+
+#slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, #slick-slide04 {
   display: none; }
 
-#exitBtn {
-  width: 30px;
-  height: 30px;
-  background-color: rgba(217, 138, 229, 0.3);
-  border: solid black 1px;
-  border-radius: 50%;
+.slick-dots li button {
   display: none; }
 
-.article {
-  display: none; }
-
-.article-one, .article-two, .article-three {
+.articlesCarousel {
+  padding-top: 10px;
   color: black;
-  border: solid yellow 3px;
-  line-height: 2em;
-  width: 77%;
-  margin: 0 auto;
-  background-color: white;
-  display: none; }
+  width: 95%;
+  border: 3px black solid;
+  background-color: rgba(217, 138, 229, 0.1); }
 
-.tester p {
-  display: none; }
+.articlesCarousel img {
+  width: 40%;
+  height: 100%;
+  border: solid black 3px;
+  float: right; }
+
+.slick-next {
+  background: black;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 1000; }
+
+.slick-prev {
+  background: black;
+  width: 60px;
+  height: 60px;
+  position: absolute; }
+
+.multiple-items {
+  width: 70%;
+  border: solid rgba(217, 138, 229, 0.3) 5px;
+  height: 40%; }
+
+.multiple-items img, li {
+  width: 50%;
+  border: solid red 3px;
+  float: left;
+  background-color: white;
+  margin: 0 auto; }
+
+.multiple-items a {
+  clear: both; }
+
+#test {
+  width: 90%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
