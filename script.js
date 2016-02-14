@@ -2,10 +2,9 @@ $(document).ready(function(){
 
 $(".articlesCarousel").slick({
 	infinite: true,
-	fade: true,
-	autoPlay: true,
-	autoplaySpeed: 1000,
 	arrows: true,
+	fade: true,
+	speed: 100,
 	swipe: true,
 	mobileFirst: true,
 	accessibilty: true
@@ -22,7 +21,7 @@ $(".articlesCarousel").slick({
 
 $('.multiple-items').slick({
   infinite: true,
-  speed: 500,
+  speed: 200,
   fade: true,
   cssEase: 'linear',
   swipe: true,

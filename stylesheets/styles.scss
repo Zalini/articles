@@ -11,9 +11,7 @@
 body {
 	margin: $none;
 	padding: $none;
-	font-family: sans-serif;
-	// background: linear-gradient(to right, $bgLight, $bgDark, $bgLight);
-	background-color: #fff;	
+	background-color: $peach;	
 }
 
 a {
@@ -27,7 +25,7 @@ a:hover {
 
 //sliders
 .slick-slider{
-	margin: 0 auto;
+	margin: 5% auto;
 	text-align: center; 
 	line-height: 2.5em; 
 }
@@ -44,9 +42,9 @@ a:hover {
 .articlesCarousel {
 	padding: 20px;
 	color: $standard;
-	width: 95%;
-	border: 3px $standard solid;
-	background-color: $bgLight;
+	width: 80%;
+	border: 1px $standard solid;
+	background-color: #fff;
 }
 
 .articlesCarousel img{
@@ -55,57 +53,99 @@ a:hover {
 	 float: right;
 }
 
-.slick-next, .slick-prev{
-	background: black;
-	width: 60px;
-	height: 60px;
-
-}
-
-
-// .slick-prev:before, .slick-next:before {
-// 	font-size: 50px; 
-// 	opacity: 1;
-// 	position: relative;
-// 	left: 20px;
-// 	// color: red;
-// }
-
 //second carousel
 .multiple-items {
 	@extend .articlesCarousel;
-	background: rgba(54, 54, 59, 0.6);
+	background: rgba(16, 16, 16, 0.9);
 	color: $standard;
 	width: 80%;
 }
 
-.multiple-items .slick-next, .multiple-items .slick-prev  {
-	background: $defBlue;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-}
-
 .multiple-items {
-	
 	img {
-	width: 32%;
-	border: solid $defBlue 7px;	
+	width: 32%;	
 	float: left;
 	margin-left: 50px;
-
 	} 
 
 	li {
 	width: 53%;
-	border: solid $defBlue 7px;	
+	border: solid $standard 3px;	
 	background-color: white;
-	margin-right: 50px;
+	margin-right: 30px;
 	float: right;
 	}
 }
 
-.slick-prev:hover,
-.slick-next:hover, {
-    background: black;
+
+
+//first Carousel
+.articlesCarousel .slick-prev:hover,
+.articlesCarousel .slick-next:hover{
+    opacity: 0.4;
 }
+.articlesCarousel .slick-prev, 
+.articlesCarousel .slick-next{
+	width: 55px;
+	height: 45px;
+	border: solid $aColor 1px;
+}
+
+.articlesCarousel .slick-prev:before{
+    font-size: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: $aColor;
+}
+
+.articlesCarousel .slick-next:before{
+    font-size: 50px;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: $aColor;
+}
+
+//Second Carousel
+
+.multiple-items .slick-prev:hover,
+.multiple-items .slick-next:hover{
+    opacity: 0.4;
+}
+
+.multiple-items .slick-next, 
+.multiple-items .slick-prev{
+	background-color: $standard;
+	border: 1px $standard solid;
+	opacity: 0.7;
+	width: 65px;
+	height: 45px;
+}
+
+.multiple-items .slick-prev:before{
+    font-size: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    right: 15px;
+    color: white;	
+    // vertical-align: text-bottom;
+}
+
+.multiple-items .slick-next:before{
+    font-size: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    left: 15px;
+    color: white;	
+}
+
+.multiple-items h2 {
+	color: white;
+}
+
+
