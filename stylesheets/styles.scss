@@ -11,7 +11,8 @@
 body {
 	margin: $none;
 	padding: $none;
-	background-color: $peach;	
+	background-color: white;
+	font-family: Georgia, serif;	
 }
 
 a {
@@ -22,14 +23,13 @@ a:hover {
 	color: $standard;
 }
 
-
-//sliders
-.slick-slider{
-	margin: 5% auto;
-	text-align: center; 
-	line-height: 2.5em; 
+h1 {
+	text-align: center;
+	text-decoration: underline;
 }
 
+
+//sliders
 #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, 
 #slick-slide04, #slick-slide10, #slick-slide11, #slick-slide12, #slick-slide13  {
 	display: none;
@@ -38,6 +38,19 @@ a:hover {
 .slick-dots li button {
 	display: none;
 }
+
+.slick-slider{
+	margin: 5% auto;
+	text-align: center; 
+	line-height: 2.5em; 
+}
+#firstCover:first-child  {
+	// background-image: url(images/seeds.jpg);
+	background-color: $peach;
+}
+
+
+
 
 .articlesCarousel {
 	padding: 20px;
@@ -48,10 +61,21 @@ a:hover {
 }
 
 .articlesCarousel img{
-	 width: 40%;
+	 width: 45%;
 	 border: solid $standard 3px;
 	 float: right;
 }
+
+.articlesCarousel p {
+	line-height: 3em;
+	text-align: left; 
+}
+
+.articlesCarousel a {
+	float: left;
+	font-size: 14px;
+}
+
 
 //second carousel
 .multiple-items {
@@ -148,4 +172,71 @@ a:hover {
 	color: white;
 }
 
+
+
+
+
+//third Carousel
+.thirdCarousel {
+	color: $standard;
+	width: 800px;
+	border: solid $bgDark 7px;
+	text-align: center;
+	margin: 0 auto;
+}
+.thirdCarousel .slick-prev:hover,
+.thirdCarousel .slick-next:hover{
+    opacity: 0.4;
+}
+
+.thirdCarousel .slick-next, 
+.thirdCarousel .slick-prev{
+	background-color: $standard;
+	border: 1px $standard solid;
+	opacity: 0.7;
+	width: 65px;
+	height: 45px;
+}
+
+.thirdCarousel .slick-prev:before{
+    font-size: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    right: 15px;
+    color: white;	
+}
+
+.thirdCarousel .slick-next:before{
+    font-size: 35px;
+    opacity: 1;
+    position: absolute;
+    top: 15%;
+    left: 15px;
+    color: white;	
+}
+
+.thirdCarousel h2 {
+	color: white;
+}
+
+.slider-nav img {
+	width: 240px;
+	height: 235px;
+}
+
+.slider-nav {
+	border: solid 7px $bgDark;
+	width: 90%;
+}
+
+.slick-dots li button {
+	display: inline;
+}
+
+@media only screen and (max-width: 975px) {
+    body {
+        background-color: lightblue;
+    }
+}
 

@@ -8,7 +8,8 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: rgba(255, 213, 197, 0.4); }
+  background-color: white;
+  font-family: Georgia, serif; }
 
 a {
   color: #FF703A; }
@@ -16,10 +17,9 @@ a {
 a:hover {
   color: black; }
 
-.slick-slider {
-  margin: 5% auto;
+h1 {
   text-align: center;
-  line-height: 2.5em; }
+  text-decoration: underline; }
 
 #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03,
 #slick-slide04, #slick-slide10, #slick-slide11, #slick-slide12, #slick-slide13 {
@@ -27,6 +27,14 @@ a:hover {
 
 .slick-dots li button {
   display: none; }
+
+.slick-slider {
+  margin: 5% auto;
+  text-align: center;
+  line-height: 2.5em; }
+
+#firstCover:first-child {
+  background-color: rgba(255, 213, 197, 0.4); }
 
 .articlesCarousel, .multiple-items {
   padding: 20px;
@@ -36,9 +44,17 @@ a:hover {
   background-color: #fff; }
 
 .articlesCarousel img, .multiple-items img {
-  width: 40%;
+  width: 45%;
   border: solid black 3px;
   float: right; }
+
+.articlesCarousel p, .multiple-items p {
+  line-height: 3em;
+  text-align: left; }
+
+.articlesCarousel a, .multiple-items a {
+  float: left;
+  font-size: 14px; }
 
 .multiple-items {
   background: rgba(16, 16, 16, 0.9);
@@ -114,5 +130,58 @@ a:hover {
 
 .multiple-items h2 {
   color: white; }
+
+.thirdCarousel {
+  color: black;
+  width: 800px;
+  border: solid rgba(217, 138, 229, 0.3) 7px;
+  text-align: center;
+  margin: 0 auto; }
+
+.thirdCarousel .slick-prev:hover,
+.thirdCarousel .slick-next:hover {
+  opacity: 0.4; }
+
+.thirdCarousel .slick-next,
+.thirdCarousel .slick-prev {
+  background-color: black;
+  border: 1px black solid;
+  opacity: 0.7;
+  width: 65px;
+  height: 45px; }
+
+.thirdCarousel .slick-prev:before {
+  font-size: 35px;
+  opacity: 1;
+  position: absolute;
+  top: 15%;
+  right: 15px;
+  color: white; }
+
+.thirdCarousel .slick-next:before {
+  font-size: 35px;
+  opacity: 1;
+  position: absolute;
+  top: 15%;
+  left: 15px;
+  color: white; }
+
+.thirdCarousel h2 {
+  color: white; }
+
+.slider-nav img {
+  width: 240px;
+  height: 235px; }
+
+.slider-nav {
+  border: solid 7px rgba(217, 138, 229, 0.3);
+  width: 90%; }
+
+.slick-dots li button {
+  display: inline; }
+
+@media only screen and (max-width: 975px) {
+  body {
+    background-color: lightblue; } }
 
 /*# sourceMappingURL=styles.css.map */

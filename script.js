@@ -19,7 +19,7 @@ $(".articlesCarousel").slick({
 
 
 
-$('.multiple-items').slick({
+$(".multiple-items").slick({
   infinite: true,
   speed: 200,
   fade: true,
@@ -28,6 +28,37 @@ $('.multiple-items').slick({
   mobileFirst: true,
   accessibilty: true
 });
+
+
+// $(".thirdCarousel").slick({
+// 	infinite: true,
+// speed: 200,
+//   fade: true,
+//   cssEase: 'linear',
+//   swipe: true,
+//   mobileFirst: true,
+//   accessibilty: true
+// });
+
+
+
+ $('.thirdCarousel').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+ 
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.thirdCarousel',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
 
 
 });
