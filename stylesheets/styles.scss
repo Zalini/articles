@@ -228,7 +228,7 @@ h1, h2 {
 }
 
 //media queries
-@media only screen and (max-width: 975px) {
+@media screen and (max-width: 975px) {
     body {
         background-color: $grey;
     }
@@ -263,7 +263,7 @@ h1, h2 {
 	}
 }
 
-@media only screen and (max-width: 590px) {
+@media screen and (max-width: 620px) {
     body {
         background-color: $neutral;
     }
