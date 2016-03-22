@@ -27,6 +27,7 @@ h1, h2 {
 }
 
 
+
 // for all sliders
 #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03, 
 #slick-slide04, #slick-slide10, #slick-slide11, #slick-slide12, #slick-slide13  {
@@ -228,42 +229,42 @@ h1, h2 {
 }
 
 //media queries
-@media screen and (max-width: 975px) {
-    body {
-        background-color: $grey;
-    }
+// @media screen and (max-width: 975px) {
+//     body {
+//         background-color: $grey;
+//     }
 
-.multiple-items {
-	width: 90%;
-}
+// .multiple-items {
+// 	width: 90%;
+// }
 
-.multiple-items {
-	img {
-	width: 40%;	
-	height: 350px;
-	float: left;
-	margin: 0 auto;
-	} 
+// .multiple-items {
+// 	img {
+// 	width: 40%;	
+// 	height: 350px;
+// 	float: left;
+// 	margin: 0 auto;
+// 	} 
 
-	li {
-	width: 52%;
-	background-color: $neutral;
-	margin-right: 15px;
+// 	li {
+// 	width: 52%;
+// 	background-color: $neutral;
+// 	margin-right: 15px;
 	
-	}
-	}
+// 	}
+// 	}
 
-	.thirdCarousel {
-		width: 90%;
-	}
+// 	.thirdCarousel {
+// 		width: 90%;
+// 	}
 
-    .slider-nav img {
-	width: 90%;
-	height: 180px;
-	}
-}
+//     .slider-nav img {
+// 	width: 90%;
+// 	height: 180px;
+// 	}
+// }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 900px) {
     body {
         background-color: $neutral;
     }
@@ -275,25 +276,25 @@ h1, h2 {
 .articlesCarousel {
 	padding: 0px;
 	color: $standard;
-	width: 97%;
+	width: 95%;
 	height: auto;
 	border: 1px $standard solid;
 	background-color: #fff;
 }
 
 .articlesCarousel img{
-	 width: 100%;
+	 width: 59%;
 	 border: solid $standard 3px;
 	 float: left;
 }
 
 .articlesCarousel p {
-	line-height: 3em;
-	text-align: left; 
+	line-height: 1.3em;
+	text-align: right; 
 }
 
 .articlesCarousel a {
-	float: left;
+	float: right;
 	font-size: 14px;
 }
 
@@ -313,18 +314,17 @@ h1, h2 {
 
 .multiple-items {
 	img {
-	width: 100%;	
+	width: 50%;	
 	height: 450px;
 	float: left;
 	margin-left: 0px;
 	} 
 
 	li {
-	width: 100%;
 	border: none;	
 	background-color: $neutral;
 	margin-right: 30px;
-	float: left;
+	width: 40%;	
 	}
 }
 
