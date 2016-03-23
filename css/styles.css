@@ -248,17 +248,47 @@ h1, h2 {
   .thirdCarousel {
     color: #000;
     width: 90%;
-    border: solid #000 7px;
+    border: solid #000 3px;
     text-align: center;
     margin: 0 auto; }
 
   .slider-nav img {
     width: 140px;
     height: 135px;
-    border: solid #000 5px; }
+    border: solid #000 2px; }
 
   .slider-nav {
-    border: solid 7px #000;
+    border: solid 3px #000;
     width: 90%; } }
+@media screen and (max-width: 600px) {
+  .articlesCarousel, .multiple-items {
+    width: 97%; }
+
+  .articlesCarousel img, .multiple-items img {
+    width: 40%; }
+
+  .multiple-items {
+    width: 97%; }
+
+  .multiple-items img {
+    width: 38%;
+    height: 300px; }
+  .multiple-items li {
+    margin-right: 0px;
+    width: 60%; }
+
+  .thirdCarousel {
+    color: #000;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto; }
+
+  .slider-nav img {
+    width: 140px;
+    height: 120px;
+    border: solid #fff 2px; }
+
+  .slider-nav {
+    width: 95%; } }
 
 /*# sourceMappingURL=styles.css.map */
