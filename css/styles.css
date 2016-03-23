@@ -260,35 +260,44 @@ h1, h2 {
   .slider-nav {
     border: solid 3px #000;
     width: 90%; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+  body {
+    font-size: 12px; }
+
   .articlesCarousel, .multiple-items {
     width: 97%; }
 
   .articlesCarousel img, .multiple-items img {
-    width: 40%; }
+    width: 40%;
+    border: solid #000 1px; }
 
   .multiple-items {
-    width: 97%; }
+    width: 97%;
+    background-color: #fff; }
 
   .multiple-items img {
-    width: 38%;
-    height: 300px; }
+    width: 30%;
+    height: 200px; }
   .multiple-items li {
     margin-right: 0px;
-    width: 60%; }
+    width: 65%; }
+  .multiple-items h2 {
+    color: #000; }
 
   .thirdCarousel {
     color: #000;
     width: 95%;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: solid #000 1px; }
 
   .slider-nav img {
-    width: 140px;
-    height: 120px;
-    border: solid #fff 2px; }
+    width: 120px;
+    height: 100px;
+    border: solid #fff 1px; }
 
   .slider-nav {
-    width: 95%; } }
+    width: 95%;
+    border: solid #000 1px; } }
 
 /*# sourceMappingURL=styles.css.map */
