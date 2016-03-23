@@ -223,15 +223,12 @@ h1, h2 {
     width: 90%; }
 
   .multiple-items img {
-    width: 50%;
-    height: 450px;
-    float: left;
+    width: 30%;
+    height: auto;
     margin-left: 0px; }
   .multiple-items li {
-    border: none;
-    background-color: #fff;
-    margin-right: 30px;
-    width: 40%; }
+    margin-right: 0px;
+    width: 65%; }
 
   .multiple-items .slick-prev:before {
     display: none; }
@@ -277,10 +274,13 @@ h1, h2 {
 
   .multiple-items img {
     width: 30%;
-    height: 200px; }
+    height: auto;
+    border: none; }
   .multiple-items li {
     margin-right: 0px;
-    width: 65%; }
+    width: 65%;
+    line-height: 1.3em;
+    border: none; }
   .multiple-items h2 {
     color: #000; }
 
@@ -289,7 +289,8 @@ h1, h2 {
     width: 95%;
     text-align: center;
     margin: 0 auto;
-    border: solid #000 1px; }
+    border: solid #000 1px;
+    line-height: 1.3em; }
 
   .slider-nav img {
     width: 120px;

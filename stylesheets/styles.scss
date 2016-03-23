@@ -277,19 +277,16 @@ h1, h2 {
 
 .multiple-items {
 	img {
-	width: 50%;	
-	height: 450px;
-	float: left;
+	width: 30%;	
+	height: auto;
 	margin-left: 0px;
 	} 
-
 	li {
-	border: none;	
-	background-color: $neutral;
-	margin-right: 30px;
-	width: 40%;	
+	margin-right: 0px;
+	width: 65%;	
 	}
 }
+
 
 .multiple-items .slick-prev:before{
     display: none;
@@ -348,11 +345,14 @@ body {
 .multiple-items {
 	img {
 	width: 30%;	
-	height: 200px;
+	height: auto;
+	border: none;
 	} 
 	li {
 	margin-right: 0px;
 	width: 65%;	
+	line-height: 1.3em;
+	border: none;
 	}
 	h2{
 		color: $standard;
@@ -365,6 +365,7 @@ body {
 	text-align: center;
 	margin: 0 auto;
 	border: solid $standard 1px;
+	line-height: 1.3em;
 }
 
 .slider-nav img {
