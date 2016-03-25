@@ -4,22 +4,15 @@
 	text-decoration: none; 
 	list-style-type: none;
 }
-
 body {
 	margin: 0px;
 	padding: 0px;
 	background-color: $neutral;
 	font-family: Georgia, sans-serif;	
 }
-
 a {
 	color: $aColor;
 }
-
-a:hover {
-	color: $standard;
-}
-
 h1, h2 {
 	text-align: center;
 	text-decoration: underline;
@@ -39,7 +32,7 @@ h1, h2 {
 .slick-slider {
 	margin: 5% auto;
 	text-align: center; 
-	line-height: 2.5em; 
+	line-height: 2em; 
 }
 
 //first Carousel
@@ -51,19 +44,18 @@ h1, h2 {
 	padding: 20px;
 	color: $standard;
 	width: 80%;
-	height: auto;
 	border: 1px $standard solid;
-	background-color: #fff;
+	background-color: $neutral;
 }
 
 .articlesCarousel img{
 	 width: 50%;
-	 border: solid $standard 3px;
+	 border: solid $standard 1px;
 	 float: right;
 }
 
 .articlesCarousel p {
-	line-height: 3em;
+	line-height: 1.5em;
 	text-align: left; 
 }
 
@@ -104,23 +96,21 @@ h1, h2 {
 //second carousel
 .multiple-items {
 	@extend .articlesCarousel;
-	background: rgba(16, 16, 16, 0.9);
-	color: $standard;
-	width: 85%;
+	width: 70%;
 }
 
 .multiple-items {
 	img {
 	width: 32%;	
 	float: left;
-	margin-left: 50px;
+	margin-left: 20px;
+	border: none;
 	} 
 
 	li {
 	width: 53%;
-	border: solid $standard 3px;	
-	background-color: $neutral;
-	margin-right: 30px;
+	margin-right: 20px;
+	border-left: solid black 1px; 
 	float: right;
 	}
 }
@@ -158,9 +148,6 @@ h1, h2 {
     color: $neutral;	
 }
 
-.multiple-items h2 {
-	color: $neutral;
-}
 
 //third Carousel
 .thirdCarousel {
@@ -238,28 +225,25 @@ h1, h2 {
 
 .articlesCarousel {
 	padding: 0px;
-	color: $standard;
 	width: 95%;
 	height: auto;
-	border: 1px $standard solid;
-	background-color: #fff;
 }
 
 .articlesCarousel img{
-	 width: 59%;
-	 border: solid $standard 3px;
-	 float: left;
+	 width: 50%;
+	 float: right;
 }
 
 .articlesCarousel p {
-	line-height: 1.3em;
-	text-align: right; 
+	text-align: left; 
+	font-size: 14px;
 }
 
 .articlesCarousel a {
-	float: right;
-	font-size: 14px;
+	float: left;
 }
+
+
 
 .articlesCarousel .slick-prev:before{
     display: none;
@@ -270,8 +254,6 @@ h1, h2 {
 }
 
 .multiple-items {
-	background: rgba(16, 16, 16, 0.9);
-	color: $standard;
 	width: 90%;
 }
 
@@ -280,10 +262,13 @@ h1, h2 {
 	width: 30%;	
 	height: auto;
 	margin-left: 0px;
-	} 
+	float: left;
+}
+
 	li {
 	margin-right: 0px;
 	width: 65%;	
+	float: right;
 	}
 }
 
@@ -323,7 +308,7 @@ h1, h2 {
 }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
 body {
 	font-size: 12px;
 }
