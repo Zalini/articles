@@ -313,14 +313,27 @@ body {
 	font-size: 12px;
 }
 
+h1, h2 {
+	font-size: 16px;
+}
+
  .articlesCarousel {
 	width: 97%;
+	display: block;
+}
+
+#firstCover:first-child p{
+	color: $aColor;
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.5em;
 }
 
 .articlesCarousel img{
-	 width: 40%;
+	 width: 100%;
 	 border: solid $standard 1px;
 }
+
 
 .multiple-items {
 	width: 97%;

@@ -247,11 +247,21 @@ h1, h2 {
   body {
     font-size: 12px; }
 
+  h1, h2 {
+    font-size: 16px; }
+
   .articlesCarousel, .multiple-items {
-    width: 97%; }
+    width: 97%;
+    display: block; }
+
+  #firstCover:first-child p {
+    color: #FF703A;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5em; }
 
   .articlesCarousel img, .multiple-items img {
-    width: 40%;
+    width: 100%;
     border: solid #000 1px; }
 
   .multiple-items {
