@@ -11,10 +11,18 @@ body {
 a {
   color: #FF703A; }
 
-h1, h2 {
+h1 {
   text-align: center;
-  text-decoration: underline;
-  font-family: 'Syncopate', sans-serif; }
+  font-family: Georgia, sans-serif;
+  margin-top: 0px;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #000;
+  width: 400px;
+  margin: 0 auto; }
+
+h2 {
+  text-align: center;
+  font-family: Georgia, sans-serif; }
 
 #slick-slide00, #slick-slide01, #slick-slide02, #slick-slide03,
 #slick-slide04, #slick-slide10, #slick-slide11, #slick-slide12, #slick-slide13 {
@@ -28,15 +36,16 @@ h1, h2 {
   text-align: center;
   line-height: 2em; }
 
-#firstCover:first-child {
-  background-color: rgba(255, 213, 197, 0.4); }
+#firstCover:first-child h3 {
+  color: #FF703A;
+  font-size: 16px;
+  margin-top: 50px; }
 
 .articlesCarousel, .multiple-items {
   padding: 20px;
   color: #000;
-  width: 80%;
-  border: 1px #000 solid;
-  background-color: #fff; }
+  width: 72%;
+  border: 1px #000 solid; }
 
 .articlesCarousel img, .multiple-items img {
   width: 50%;
@@ -90,7 +99,6 @@ h1, h2 {
 .multiple-items li {
   width: 53%;
   margin-right: 20px;
-  border-left: solid black 1px;
   float: right; }
 
 .multiple-items .slick-prev:hover,
@@ -254,11 +262,13 @@ h1, h2 {
     width: 97%;
     display: block; }
 
-  #firstCover:first-child p {
-    color: #FF703A;
-    font-size: 20px;
+  #firstCover:first-child h3 {
     text-align: center;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    color: #FF703A;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 0px; }
 
   .articlesCarousel img, .multiple-items img {
     width: 100%;

@@ -13,10 +13,20 @@ body {
 a {
 	color: $aColor;
 }
-h1, h2 {
+
+h1 {
 	text-align: center;
-	text-decoration: underline;
-	font-family: 'Syncopate', sans-serif;
+	font-family: Georgia, sans-serif;
+	margin-top: 0px;
+	letter-spacing: -2px;
+	border-bottom: 1px solid $standard;
+	width: 400px;
+	margin: 0 auto;
+}
+
+h2 {
+	text-align: center;
+	font-family: Georgia, sans-serif;
 }
 
 // for all sliders
@@ -36,16 +46,17 @@ h1, h2 {
 }
 
 //first Carousel
-#firstCover:first-child  {
-	background-color: $peach;
+#firstCover:first-child h3 {
+	color: $aColor;
+	font-size: 16px;
+	margin-top: 50px; 
 }
 
 .articlesCarousel {
 	padding: 20px;
 	color: $standard;
-	width: 80%;
+	width: 72%;
 	border: 1px $standard solid;
-	background-color: $neutral;
 }
 
 .articlesCarousel img{
@@ -110,7 +121,6 @@ h1, h2 {
 	li {
 	width: 53%;
 	margin-right: 20px;
-	border-left: solid black 1px; 
 	float: right;
 	}
 }
@@ -322,11 +332,13 @@ h1, h2 {
 	display: block;
 }
 
-#firstCover:first-child p{
-	color: $aColor;
-	font-size: 20px;
+#firstCover:first-child h3{
 	text-align: center;
 	line-height: 1.5em;
+	color: $aColor;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-top: 0px; 
 }
 
 .articlesCarousel img{
